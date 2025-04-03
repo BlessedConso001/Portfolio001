@@ -317,6 +317,103 @@ body {
     border-left: 4px solid var(--secondary-color);
     border-radius: 0 8px 8px 0;
 }
+/* Education Section Styles */
+.education {
+    padding: 100px 10%;
+    background-color: var(--bg-color);
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 60px;
+}
+
+.education-item::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--secondary-color);
+}
+
+.education-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.education-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+.education-content h3 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.education-content h4 {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education-content p {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.education-certificate {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 3px 10px;
+    background: rgba(90, 143, 123, 0.1);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Responsive Design for Education Section */
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 50px;
+    }
+    
+    .education-item::before {
+        left: 30px;
+        height: calc(100% - 20px);
+        top: 50px;
+    }
+    
+    .education-date {
+        top: 0;
+        left: 20px;
+    }
+}
 
 /* Projects Section */
 .projects {
