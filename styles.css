@@ -18,6 +18,7 @@ body {
     color: var(--text-color);
 }
 
+/* Header & Navigation */
 .header {
     position: fixed;
     top: 0;
@@ -40,6 +41,10 @@ body {
     font-weight: 600;
 }
 
+.navbar {
+    display: flex;
+}
+
 .navbar a {
     display: inline-block;
     font-size: 18px;
@@ -53,8 +58,48 @@ body {
 .navbar a:hover {
     color: var(--main-color);
 }
-/* Home Section Styles */
 
+/* Compact Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--text-color);
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+.hamburger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Home Section */
 .home {
     position: relative;
     width: 100%;
@@ -63,7 +108,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px 10% 0;
-    
 }
 
 .home::before {
@@ -164,6 +208,24 @@ body {
     transform: translateY(-3px);
 }
 
+.btn-cv {
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+
+.btn-cv:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Sections Common Styles */
 .heading {
     text-align: center;
     font-size: 45px;
@@ -173,7 +235,8 @@ body {
 .heading span {
     color: var(--main-color);
 }
-/* About Section Styles */
+
+/* About Section */
 .about {
     padding: 100px 10%;
     background-color: var(--bg-color);
@@ -255,24 +318,7 @@ body {
     border-radius: 0 8px 8px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-    }
-    
-    .about-img, .about-content {
-        flex: 1 1 100%;
-    }
-    
-    .passion-box {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}
-/* Projects Section Styles */
-
+/* Projects Section */
 .projects {
     padding: 100px 10%;
     background-color: #fff;
@@ -317,8 +363,8 @@ body {
     margin-bottom: 15px;
     line-height: 1.5;
 }
-/* Skills Section Styles */
 
+/* Skills Section */
 .skills {
     padding: 100px 10%;
     background-color: var(--bg-color);
@@ -358,8 +404,8 @@ body {
     border-radius: 20px;
     font-size: 14px;
 }
-/* Contact Section Styles */
 
+/* Contact Section */
 .contact {
     padding: 100px 10%;
     background-color: #fff;
@@ -401,10 +447,15 @@ body {
     border: none;
 }
 
+/* Footer */
 .footer {
     padding: 30px 10%;
     background: var(--bg-color);
     text-align: center;
+}
+
+.footer-text p {
+    margin-bottom: 10px;
 }
 
 .footer-iconTop a {
@@ -426,8 +477,54 @@ body {
     color: var(--bg-color);
 }
 
-/* Responsive design */
+/* Responsive Design - Mobile Menu */
 @media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 250px;
+        height: auto;
+        background: rgba(249, 245, 255, 0.98);
+        backdrop-filter: blur(5px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: right 0.3s ease;
+        z-index: 999;
+        box-shadow: -5px 5px 15px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 0 0 0 15px;
+    }
+    
+    .navbar.active {
+        right: 0;
+    }
+    
+    .navbar a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+        width: 100%;
+        border-radius: 5px;
+        transition: all 0.3s;
+        color: var(--text-color);
+    }
+    
+    .navbar a:hover {
+        background: rgba(103, 91, 128, 0.1);
+        padding-left: 1.3rem;
+        color: var(--main-color);
+    }
+    
     .home {
         flex-direction: column;
         padding: 100px 5% 50px;
@@ -441,32 +538,22 @@ body {
     .img {
         width: 100%;
         height: auto;
+        max-height: 400px;
     }
     
     .contact form .input-box input {
         width: 100%;
     }
     
-    .navbar a {
-        margin-left: 20px;
-        font-size: 16px;
+    .about-container {
+        flex-direction: column;
     }
-}
-.button-group {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.btn-cv {
-    background: transparent;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-}
-
-.btn-cv:hover {
-    background: var(--main-color);
-    color: var(--bg-color);
+    
+    .passion-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -477,5 +564,21 @@ body {
     .button-group .btn {
         width: 100%;
         text-align: center;
+    }
+    
+    .heading {
+        font-size: 36px;
+    }
+    
+    .home-content h1 {
+        font-size: 42px;
+    }
+    
+    .home-content h3 {
+        font-size: 24px;
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 }
