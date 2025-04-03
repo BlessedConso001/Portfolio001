@@ -270,6 +270,7 @@ body {
         text-align: center;
     }
 }
+/* Projects Section Styles */
 
 .projects {
     padding: 100px 10%;
@@ -315,6 +316,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.5;
 }
+/* Skills Section Styles */
 
 .skills {
     padding: 100px 10%;
@@ -355,6 +357,7 @@ body {
     border-radius: 20px;
     font-size: 14px;
 }
+/* Contact Section Styles */
 
 .contact {
     padding: 100px 10%;
@@ -448,8 +451,6 @@ body {
         font-size: 16px;
     }
 }
-/* Add these to your existing styles.css */
-
 .button-group {
     display: flex;
     gap: 15px;
@@ -467,7 +468,6 @@ body {
     color: var(--bg-color);
 }
 
-/* Make sure your buttons stack on mobile */
 @media (max-width: 576px) {
     .button-group {
         flex-direction: column;
