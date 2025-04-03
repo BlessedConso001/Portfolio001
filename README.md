@@ -46,4 +46,4 @@ portfolio/
 │   ├── project1.jpg
 │   └── CURRICULUM_VITAE1.pdf
 ├── README.md
-└── .gitignore   
+└── .gitignore
