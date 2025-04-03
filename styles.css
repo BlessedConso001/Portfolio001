@@ -53,6 +53,7 @@ body {
 .navbar a:hover {
     color: var(--main-color);
 }
+/* Home Section Styles */
 
 .home {
     position: relative;
