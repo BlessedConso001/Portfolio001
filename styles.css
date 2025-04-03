@@ -156,7 +156,7 @@ body {
     height: 500px;
     border-radius: 30px;
     margin: 20px 0 40px;
-    width: 500px;
+    width: 400px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
