@@ -1,9 +1,7 @@
-# Sylvia's Portfolio
+# Kennedy's Portfolio
 
 ## 📌 Overview  
 Welcome to my **Portfolio Website**! This project showcases my skills, projects, and experience as a **Web Developer**. It features a clean, responsive design with interactive elements to highlight my work.  
-
-🔗 **Live Demo:** [https://portfolio1-an9z-git-main-sylvia-kathonis-projects.vercel.app/](#) *(https://portfolio1-an9z-git-main-sylvia-kathonis-projects.vercel.app/)*  
 
 ---
 
@@ -18,32 +16,17 @@ Welcome to my **Portfolio Website**! This project showcases my skills, projects,
 ---
 
 ## 🛠️ Technologies Used  
-| Category       | Technologies |
-|---------------|-------------|
-| **Frontend**  | HTML5, CSS3, JavaScript |
-| **Styling**   | Bootstrap, Custom CSS |
-| **Animations**| Typed.js (for typing effect) |
-| **Deployment**| Vercel |
-| **Version Control** | Git & GitHub |
+- **Frontend:** HTML5, CSS3, JavaScript  
+- **Styling:** Bootstrap, Custom CSS  
+- **Animations:** Typed.js (for typing effect)  
+- **Deployment:** Netlify  
+- **Version Control:** Git & GitHub  
 
 ---
 
 ## 🚀 How to Run Locally  
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/Kathoni/portfolio.git
+   git clone https://github.com/portfolio.git
    cd portfolio
-
-# 📂 Project Structure
-
-portfolio/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── portfolio.jpg
-│   ├── about.jpg
-│   ├── project1.jpg
-│   └── CURRICULUM_VITAE1.pdf
-├── README.md
-└── .gitignore
+```
