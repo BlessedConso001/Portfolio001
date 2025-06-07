@@ -153,10 +153,10 @@ body {
 }
 
 .img {
-    height: 500px;
+    height: 400px;
     border-radius: 30px;
     margin: 20px 0 40px;
-    width: 480px;
+    width: 380px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.5s;
