@@ -1,4 +1,4 @@
-# Kennedy's Portfolio
+# Consolata Mugo's Portfolio
 
 ## 📌 Overview  
 Welcome to my **Portfolio Website**! This project showcases my skills, projects, and experience as a **Web Developer**. It features a clean, responsive design with interactive elements to highlight my work.  
